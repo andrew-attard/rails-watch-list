@@ -1,7 +1,7 @@
 <h1><%= @list.name %></h1>
 <% @list.movies.each do |movie| %>
   <%= movie.title %>
-  <% raise %>
+  <%# raise %>
 <% end %>
 <%= link_to "Add a Movie", new_list_bookmark_path(@list.id), class: 'btn-light opacity-25 text-decoration-none' %>
 <%= link_to 'Back to Lists', lists_path, class: 'btn-light opacity-25 text-decoration-none' %>
